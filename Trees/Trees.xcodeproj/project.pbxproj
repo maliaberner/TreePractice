@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660559C920B60AFF0003DFE6 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 660559C820B60AFF0003DFE6 /* Node.cpp */; };
 		668A73EF20A3B60600482EBB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 668A73EE20A3B60600482EBB /* main.cpp */; };
 		668A73F720A3B61D00482EBB /* BST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 668A73F520A3B61D00482EBB /* BST.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		660559C820B60AFF0003DFE6 /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		660559CA20B60B2B0003DFE6 /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		668A73EB20A3B60600482EBB /* Trees */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Trees; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A73EE20A3B60600482EBB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		668A73F520A3B61D00482EBB /* BST.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BST.cpp; sourceTree = "<group>"; };
@@ -60,9 +63,11 @@
 		668A73ED20A3B60600482EBB /* Trees */ = {
 			isa = PBXGroup;
 			children = (
-				668A73EE20A3B60600482EBB /* main.cpp */,
 				668A73F520A3B61D00482EBB /* BST.cpp */,
 				668A73F820A3B67200482EBB /* BST.h */,
+				660559C820B60AFF0003DFE6 /* Node.cpp */,
+				660559CA20B60B2B0003DFE6 /* Node.h */,
+				668A73EE20A3B60600482EBB /* main.cpp */,
 			);
 			path = Trees;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660559C920B60AFF0003DFE6 /* Node.cpp in Sources */,
 				668A73EF20A3B60600482EBB /* main.cpp in Sources */,
 				668A73F720A3B61D00482EBB /* BST.cpp in Sources */,
 			);
