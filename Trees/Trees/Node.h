@@ -18,6 +18,8 @@ public:
     Node get_left();
     void set_right(int v);
     void set_left(int v);
+    void set_key(int v);
+    bool operator==(const Node &other);
     
 private:
     int key;

@@ -23,6 +23,10 @@ int Node::get_key(){
     return key;
 }
 
+void Node::set_key(int v){
+    key = v;
+}
+
 Node Node::get_right(){
     return *right;
 }
@@ -36,4 +40,9 @@ void Node::set_right(int v){
 void Node::set_left(int v){
    left = new Node(v);
 }
+
+bool Node::operator==(const Node &other) const {
+    return *this == other;
+}
+
 

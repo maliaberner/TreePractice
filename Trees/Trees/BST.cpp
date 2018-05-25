@@ -16,7 +16,7 @@
 
 BST::BST(){
     is_initialized = true;
-    Node root();
+    Node root;
 }
 
 
@@ -24,12 +24,12 @@ BST::BST(){
 void BST::insert(Node x, int k){
     
     if(x.get_key() == k || x.get_key() == NULL){
-        std::cout << k;
-        std::cout << x.get_right().get_key();
+        root.set_key(k);
+        std::cout << root.get_key();
     }
     
     else if(x.get_key() < k){
-        if(x.get_right().get_key() != NULL){
+        if(x.get_right() != NULL){
             insert(x.get_right(), k);
         }
         else(x.set_right(k));
