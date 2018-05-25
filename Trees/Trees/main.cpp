@@ -18,5 +18,12 @@ int main(int argc, const char * argv[]) {
 
     BST bst;
     bst.insert(bst.root, 7);
+    //bst.test();
+    bst.insert(bst.root, 3);
     bst.insert(bst.root, 8);
+    bst.insert(bst.root, 9);
+    bst.insert(bst.root, 2);
+
+
+
 }

@@ -27,11 +27,11 @@ void Node::set_key(int v){
     key = v;
 }
 
-Node Node::get_right(){
-    return *right;
+int Node::get_right(){
+    return right->get_key();
 }
-Node Node::get_left(){
-    return *left;
+int Node::get_left(){
+    return left->get_key();
 }
 
 void Node::set_right(int v){
@@ -39,10 +39,6 @@ void Node::set_right(int v){
 }
 void Node::set_left(int v){
    left = new Node(v);
-}
-
-bool Node::operator==(const Node &other) const {
-    return *this == other;
 }
 
 

@@ -14,8 +14,8 @@ public:
     Node();
     Node(int v);
     int get_key();
-    Node get_right();
-    Node get_left();
+    int get_right();
+    int get_left();
     void set_right(int v);
     void set_left(int v);
     void set_key(int v);

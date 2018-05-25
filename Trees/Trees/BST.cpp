@@ -19,13 +19,21 @@ BST::BST(){
     Node root;
 }
 
+void BST::test(){
+    root.set_right(8);
+    int x = root.get_right();
+    std::cout << x;
+    
+}
 
 
 void BST::insert(Node x, int k){
     
     if(x.get_key() == k || x.get_key() == NULL){
         root.set_key(k);
-        std::cout << root.get_key();
+        root.set_left(NULL);
+        root.set_right(NULL);
+        std::cout << " " << root.get_key();
     }
     
     else if(x.get_key() < k){
@@ -33,30 +41,16 @@ void BST::insert(Node x, int k){
             insert(x.get_right(), k);
         }
         else(x.set_right(k));
+        std::cout << "  " << x.get_right();
+    }
+    else if(x.get_key() > k){
+        if(x.get_left() != NULL){
+            insert(x.get_left(), k);
+        }
+        else(x.set_left(k));
+        std::cout << "\n" << x.get_left();
     }
     
 }
-
-/*
-void BST::insert(Node x, int k){
-    if(x.key > k){
-        
-        std::cout<<(x.get_left());
-        if(x.get_left() == NULL){
-            x. = &k;
-        }
-        else{
-            insert(*x.left, k);
-        }
-    }
-    else if(x.key > k.key){
-        if(x.right == NULL){
-            x.right = &k;
-        }
-        else{
-            insert(*x.right, k);
-        }
-    }
-}*/
 
 

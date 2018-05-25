@@ -18,6 +18,7 @@ public:
     BST();
     Node root;
     void insert(Node x, int k);
+    void test();
     
     
     
